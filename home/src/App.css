@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (max-height:400px) {
+  .App-category .App-item.image {}
+}
+
+.App-header {
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+}
+
+.App-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-bottom: 1px solid cadetblue;
+}
+
+.App-content .title {
+  font-size: 2rem;
+  text-align: left;
+  padding: 10px;
+  background-color: cadetblue;
+  color: white;
+}
+
+.App-category {
+  align-self: center;
+  display: grid;
+  overflow-x: auto;
+  overflow-y: hidden;
+  grid-auto-flow: column;
+  align-items: flex-start;
+  width: 100%;
+  max-height: 60vh;
+  grid-auto-columns: min-content;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* padding-left: 5%; */
+}
+
+.App-item-wrapper {
+  height: auto;
+  width: min(40vw, 200px);
+  max-width: min(40vw, 300px);
+  /* padding-inline: max(3vw, 20px); */
+  margin-inline: max(2vw, 20px);
+}
+
+.App-item {
+  display: flex;
+  /* border: 2px solid rgb(236, 236, 236); */
+  overflow: visible;
+  transition: 0.2s linear;
+  flex-direction: column;
+  align-items: center;
+  max-width: min(40vw, 200px);
+  max-height: min(40vh, 300px);
+  height: min(40vh, 300px);
+  /* max-height: 50vh; */
+  /* max-height: min(50vh, 400px); */
+}
+
+.App-item .image {
+  transition: 0.2s linear;
+  height: min(40vh, 300px);
+  /* height: min(50vh, 400px); */
+  font-size: 1rem;
+  overflow: visible;
+  /* padding-inline: max(1vh, 10px); */
+}
+
+.App-item :hover {
+  height: min(42vh, 320px);
+  /* padding-inline: 0; */
+}
+
+.text {
+  padding-top: 15px;
+  /* margin: 10px; */
+  white-space: pre-line;
+  /* height: 100%; */
+  /* width: 300px; */
+  font-size: calc(6px + 1vmin);
+  text-align: center;
+  overflow: hidden;
+}

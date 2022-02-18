@@ -1,0 +1,22 @@
+[
+    {
+        "id": 0,
+        "category": "Games",
+        "items": [
+            {
+                "id": 0,
+                "name": "wordPOP",
+                "url": "wordpop/",
+                "imgPath": "wordpop/preview.png",
+                "desc": "Connect tiles to create and clear words.\nClear as many tiles as you can.\nEvery board is built to be 100% clearable!"
+            },
+            {
+                "id": 1,
+                "name": "absurdle (incomplete)",
+                "url": "absurdle/",
+                "imgPath": "absurdle/preview.png",
+                "desc": "It's a Wordle clone...with a moving target!\nEach game is randomly generated, so you can play as much as you want."
+            }
+        ]
+    }
+]
