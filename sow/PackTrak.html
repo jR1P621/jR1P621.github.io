@@ -34,6 +34,30 @@
             border-bottom: 3px solid #3b82f6;
             padding-bottom: 20px;
             margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .header-content {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .header-actions {
+            display: flex;
+            align-items: center;
+        }
+        
+        .coffee-button img {
+            height: 40px;
+            transition: transform 0.2s ease;
+        }
+        
+        .coffee-button img:hover {
+            transform: scale(1.05);
         }
         
         h1 {
@@ -151,6 +175,19 @@
         }
         
         @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            
+            .header-content {
+                min-width: 100%;
+            }
+            
+            .header-actions {
+                width: 100%;
+                justify-content: center;
+            }
+            
             .month-details {
                 grid-template-columns: 1fr;
             }
@@ -168,9 +205,14 @@
 <body>
     <div class="container">
         <header>
-            <h1>PackTrak</h1>
-            <div class="description">Hash Longevity Tracking</div>
-            <div class="start-date">Start Date: 2026-01-16</div>
+            <div class="header-content">
+                <h1>PackTrak</h1>
+                <div class="description">Hash Longevity Tracking</div>
+                <div class="start-date">Start Date: 2026-01-16</div>
+            </div>
+            <div class="header-actions">
+                <a href="https://www.buymeacoffee.com/JonRippe" class="coffee-button" target="_blank" rel="noopener noreferrer" title="Support this project - Buy me a coffee"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug=JonRippe&amp;button_colour=60a5fa&amp;font_colour=000000&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=312714" alt="Buy me a coffee button"></a>
+            </div>
         </header>
         
         <div class="summary">
@@ -211,7 +253,7 @@
         </div>
         
         <footer>
-            <p>Last updated: 2026-02-07 07:35:53 UTC</p>
+            <p>Last updated: 2026-02-07 08:59:57 UTC</p>
         </footer>
     </div>
 </body>
